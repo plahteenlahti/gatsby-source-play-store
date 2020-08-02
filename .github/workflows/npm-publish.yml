@@ -26,7 +26,8 @@ jobs:
       - name: Publish new version to NPM
         uses: actions/setup-node@v1
         with:
-          node-version: 13.x
+          node-version: 12
+          always-auth: true
           registry-url: 'https://registry.npmjs.org'
       - run: yarn publish
         env:
