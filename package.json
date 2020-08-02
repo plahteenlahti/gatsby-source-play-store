@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-source-app-store",
+  "name": "gatsby-source-play-store",
   "description": "Gatsby source plugin for building websites using Google Play Store as a data source",
   "version": "1.0.7",
   "main": "index.js",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/plahteenlahti/gatsby-source-app-store"
+    "url": "git+https://github.com/plahteenlahti/gatsby-source-app-store.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
