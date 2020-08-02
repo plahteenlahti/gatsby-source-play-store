@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn install --frozen-lockfile
+      - run: yarn
       - run: yarn test
 
   publish-npm:
@@ -23,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Publish new version to NPM
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: 12
           always-auth: true
           registry-url: 'https://registry.npmjs.org'
+      - run: yarn
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install --frozen-lockfile
+      - run: yarn
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
