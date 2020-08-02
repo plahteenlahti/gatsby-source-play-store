@@ -1,7 +1,7 @@
 {
   "name": "@plahteenlahti/gatsby-source-play-store",
   "description": "Gatsby source plugin for building websites using Google Play Store as a data source",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "author": "Perttu Lähteenlahti <perttu@lahteenlahti.com>",
   "bugs": {
